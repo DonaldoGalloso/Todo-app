@@ -17,7 +17,7 @@
 
 # Descarga (Clonar de repositorio)
 
-1. git clone https://gitlab.com/learn577/practicas.git
+1. git clone https://github.com/DonaldoGalloso/Todo-app.git
 
 2. cd practicas
 
