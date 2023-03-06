@@ -67,14 +67,14 @@ const ListItem = ({name,description,id,status}) => {
 
     return(
         <div key={name} className="block max-w-sm mx-auto p-6 border border-gray-200 rounded-lg shadow hover:bg-gray-100 bg-gray-600 border-gray-700 hover:bg-gray-500 mb-5" >
-            <p className= {` mb-5 text-l lg:text-2xl font-bold ${TodoCompleted? 'line-through text-rose-300' : 'text-white'  } tracking-tight px-2   transition ease-out hover:scale-110  duration-300`} onClick={showHandler} >{name}</p>
+            <p className= {` cursor mb-5 text-l lg:text-2xl font-bold ${TodoCompleted? 'line-through text-rose-300' : 'text-white'  } tracking-tight px-2   transition ease-out hover:scale-110  duration-300`} onClick={showHandler} >{name}</p>
             {Showdescription? <p className="font-normal text-lg text-gray-200 animate__bounceIn my-3">{description}</p> : null}
             <div className="flex justify-between">
                     {IsEditTodo?
                     null
                     :
                     <div className="flex items-center" >
-                        <input    type="checkbox" onChange={completedHandler} checked={TodoCompleted} className="w-4 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <input    type="checkbox" onChange={completedHandler} checked={TodoCompleted} className="cursor w-4 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
                         <label  className="ml-2 text-xs  font-medium text-gray-300">Finalizar tarea</label>
                     </div>
                     }

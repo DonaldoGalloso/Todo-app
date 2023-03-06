@@ -5,6 +5,9 @@
 .bgapp{
     background-color: rgb(47, 49, 52);
 }
+.cursor{
+    cursor: pointer;
+}
 
 li a {
     border-radius: 7px;
